@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: cyan;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        details {
+            margin: 10px 0;
+        }
+        mark {
+            background-color: yellow;
+            padding: 2px;
+        }
+        .discount {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: green;
+        }
+        del {
+            color: red;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        progress {
+            width: 100%;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+
+        <h1>Bienvenido a Nuestra Tienda</h1>
+        <p>Encuentra los mejores productos con ofertas exclusivas.</p>
+
+        <details>
+            <summary>Información del Producto</summary>
+            <p>Este producto tiene una garantía de 2 años y está fabricado con materiales ecológicos.</p>
+        </details>
+
+        <p>Todos los precios incluyen <abbr title="Impuesto al Valor Agregado">IVA</abbr>.</p>
+
+        <p>Según <cite>Revista Tecnología Hoy</cite>, este es el mejor celular del año.</p>
+
+        <p><dfn>Garantía extendida</dfn>: serivico adicional que cubre daños por 3 años más.</p>
+
+        <dialog id="oferta">
+            <p><strong>¡Descuento especial!</strong> Usa el código <code>DESCUENTO10</code> y obten un 10% de descuento en tu compra.</p>
+            <button onclick="document.getElementById('oferta').close()">Cerrar</button>
+        </dialog>
+        <button onclick="document.getElementById('oferta').showModal()">Ver Oferta</button>
+
+        <p>Estado del envío:</p>
+        <progress value="60" max="100"></progress>
+
+        <h2>Producto destacado</h2>
+        <p>¡No te pierdas el <mark>Smartphone X</mark> con 20% de descuento!</p>
+
+        <p>Precio: <del>$200</del> class="discount">$150</p>
+
+        <p>Oferta válida hasta el <time datetime="2025-03-01">1 de marzo de 2025</time>.</p>
+
+        <p>Para comprar rapido, presiona <kbd>Ctrl + F</kbd>y busca tu producto favorito.</p>
+
+        <p>El sistema responderá con: <samp>Pedido confirmado</samp>.</p>
+
+        <div class="footer">
+            <p><small>Los precios pueden cambiar sin previo aviso. Aplican términos y condiciones.</small></p>
+        </div>
+    </div>
+
+</body>
+</html>
+
